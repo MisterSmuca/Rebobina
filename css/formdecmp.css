@@ -1,3 +1,16 @@
 body {
-    background-color: #B7DED6;
+    background-color: #B7DED6; /* Fundo de Tela */
+}
+nav ul {
+    text-align: center; /* Centraliza o Menu  */
+    list-style-type: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o espaçamento */
+}
+nav ul li {
+    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
+    margin-right: 10px; /* Espaço entre os botões */
+}
+button{
+    border-radius: 20px; /* Arredonda a Borda */
+    font-size: 18px; /* Aumenta o Tamanho do Botão */
 }
