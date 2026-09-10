@@ -1,5 +1,12 @@
 body {
-    background-color: #F7B779; /* Fundo de Tela */
+    background-color: #daa269; /* Fundo de Tela */
+}
+h1 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    margin-top: 20px;
 }
 nav ul {
     text-align: center; /* Centraliza o Menu  */
@@ -14,4 +21,9 @@ nav ul li {
 button{
     border-radius: 20px; /* Arredonda a Borda */
     font-size: 18px; /* Aumenta o Tamanho do Botão */
+}
+#carouselExampleFade .carousel-item img {
+  height: 500px;       
+  object-fit: cover;    
+  width: 100%;
 }
