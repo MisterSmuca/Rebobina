@@ -1,9 +1,14 @@
 body {
-    background-color: #daa269; /* Fundo de Tela */
+  background-image: url('../img/filmes/vhs2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* efeito parallax */
 }
 h1 {
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
 }
 header {
     margin-top: 20px;
@@ -23,7 +28,91 @@ button{
     font-size: 18px; /* Aumenta o Tamanho do Botão */
 }
 #carouselExampleFade .carousel-item img {
-  height: 500px;       
-  object-fit: cover;    
-  width: 100%;
+  height: 600px;    
+  width: 100%;   
+  object-fit: cover; 
+  object-position: center;   
+  
+}
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 35px;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 50px; 
+}
+
+/* CARD DAS NOVELAS */
+
+.card{
+    background: #FFFDF7;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+    border: 2px solid #E8D5A2;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background-color: #1a1a1a; /* preenche o espaço vazio - escolha uma cor que combine com o tema */
+    border-radius: 12px;
+}
+/* NOME DA NOVELA */
+
+.card h3{
+    margin-top: 15px;
+    color: #8A5A44;
+    font-size: 24px;
+}
+
+/* DESCRIÇÃO */
+
+.card p{
+    margin-top: 10px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* PREÇO */
+
+.preco{
+    color: #A86A3D;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* BOTÃO */
+
+.card button{
+    margin-top: 15px;
+    background: #DDA15E;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: #BC6C25;
 }
