@@ -1,7 +1,7 @@
 body {
     background-color: #000000; /* Fundo de Tela */
     border: solid 30px;
-    /*background-image:url("../img/jogos/50911b324a8c45c62fb31c418625254e.jpg");*/
+   
    
 }
 
@@ -30,6 +30,7 @@ transform: translateY(-5px);
     background-color: black;
    margin-bottom: 80%;
    background-image:url("../img/jogos/remade-the-ps2-boot-screen-in-5k-for-your-desktop-wallpaper-v0-vsprmxbhzaj81.webp") ;
+   
    
 }
 
@@ -95,6 +96,9 @@ nav button{
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 
     transition: 0.3s;
+
+    width: 100%;
+    height: 365px;
 }
 
 .card:hover{
@@ -124,23 +128,106 @@ nav button{
     margin-top: 10px;
     color: #666;
     line-height: 1.4;
-    background-color: #ffffff;
+    
 }
 #pac{
     width: 220px;
     height: 110px;
 }
-#pac:hover{
-    background-image:url("../img/jogos/pacc.gif")
+#pac-man:hover{
+    background-image:url("../img/jogos/pachover1.gif");
+    background-position: 64% -58%;
 }
+
 #mari{
     width: 220px;
     height: 100px;
 }
 #mario:hover{
     background-image:url("../img/jogos/dequpxt-1bebfb58-ca59-4696-8a69-42d40657bede.gif");
-   
+    background-repeat: no-repeat;
+     background-position: 100% 95%;
+       
 }
+
+#soni{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+#sonic:hover{
+    background-image:url("../img/jogos/download.gif");
+    background-repeat: no-repeat;
+    background-position: -950% 120%;
+     background-size: 300px 150px;
+}
+#mario-kart:hover{
+    background-image:url("../img/jogos/Kart.gif");
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 80px 50px;
+}
+
+#maka{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#Mortal-Kombat{
+
+}
+
+#Don{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#Donkey-kong{
+
+}
+
+#Mor{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#Mortal-Kombat{
+
+}
+
+#Stree{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#Street-Fighter{
+
+}
+
+#Tetr{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#Tetris{
+
+}
+
+#The{
+    width: 220px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+#The-king-of-fighters-97{
+
+}
+
 /* PREÇO */
 
 .preco{
@@ -148,6 +235,7 @@ nav button{
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
+    background-color: none;
 }
 
 /* BOTÃO */
