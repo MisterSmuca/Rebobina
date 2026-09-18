@@ -1,5 +1,12 @@
 body {
-    background-color: #F3E2B8; /* Fundo de Tela */
+    background-color: white; /* Fundo de Tela */
+    border:solid black 20px;
+   
+    background-image: url("../img/musica/musical-notes.gif");
+    background-size: 110px 110px;
+    
+    background-position: 64% -89%;
+
 }
 nav ul {
     text-align: center; /* Centraliza o Menu  */
@@ -8,9 +15,152 @@ nav ul {
 }
 nav ul li {
     display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 10px; /* Espaço entre os botões */
+    margin-right: 4%; /* Espaço entre os botões */
+    
 }
 button{
     border-radius: 20px; /* Arredonda a Borda */
     font-size: 18px; /* Aumenta o Tamanho do Botão */
+    
+}
+button:hover{
+transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+.al{
+    background-color: black;
+   
+   background-image:url("../img/musica/f.jpg") ;
+    background-position: center;
+    
+  background-attachment: fixed; /* efeito parallax */
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+nav button{
+    border-radius: 20px; /* Arredonda a Borda */
+    font-size: 18px; /* Aumenta o Tamanho do Botão */
+    width: 150%;
+   
+}
+
+
+/* TÍTULO */
+
+.titulo{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 42px;
+    color: #ffffff;
+
+}
+
+/* CATÁLOGO */
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 35px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/* CARD DAS NOVELAS */
+
+.card{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    
+    border: 5px solid #000000;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+
+    width: 110%;
+    height: 365px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    
+}
+
+
+/* NOME DA NOVELA */
+
+.card h3{
+    margin-top: 15px;
+    color: #686666;
+    font-size: 24px;
+}
+
+/* DESCRIÇÃO */
+
+.card p{
+    margin-top: 10px;
+    color: #666;
+    line-height: 1.4;
+    
+}
+
+/* PREÇO */
+
+.preco{
+    color: #A86A3D;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: none;
+}
+
+/* BOTÃO */
+
+.card button{
+    margin-top: 15px;
+    background: #686666;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: #242323;
+}
+/* RESPONSIVO */
+
+@media (max-width: 1000px){
+    .catalogo{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 700px){
+    .catalogo{
+        grid-template-columns: repeat(1, 300px);
+    }
 }
