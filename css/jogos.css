@@ -28,7 +28,7 @@ transform: translateY(-5px);
 }
 .al{
     background-color: black;
-   margin-bottom: 80%;
+   
    background-image:url("../img/jogos/remade-the-ps2-boot-screen-in-5k-for-your-desktop-wallpaper-v0-vsprmxbhzaj81.webp") ;
    
    
@@ -175,7 +175,10 @@ nav button{
 }
 
 #Mortal-Kombat{
-
+    background-image:url("");
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 80px 50px;
 }
 
 #Don{
@@ -184,8 +187,11 @@ nav button{
     border-radius: 20px;
 }
 
-#Donkey-kong{
-
+#Donkey-kong:hover{
+    background-image:url("../img/jogos/da8rd01-70ed376c-5a80-4b82-8393-81d8369165ff.gif");
+    background-repeat: no-repeat;
+    background-position: 105% 95%;
+    background-size: 100px 120px;
 }
 
 #Mor{
@@ -194,8 +200,16 @@ nav button{
     border-radius: 20px;
 }
 
-#Mortal-Kombat{
+#Mortal-Kombat:hover {
+    background-image: 
+        url("../img/jogos/kittana.gif"),
+        url("../img/jogos/kitana-winpose.gif");
 
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 95% 95%, -5% 95%;
+
+    background-size: 100px 110px, 125px 135px;
 }
 
 #Stree{
@@ -204,18 +218,29 @@ nav button{
     border-radius: 20px;
 }
 
-#Street-Fighter{
+#Street-Fighter:hover{
+     background-image: 
+        url("../img/jogos/riu.gif"),
+        url("../img/jogos/chhun.gif");
 
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 95% 95%, -5% 95%;
+
+    background-size: 80px 90px, 105px 115px;
 }
 
 #Tetr{
     width: 220px;
-    height: 110px;
+    height: 115px;
     border-radius: 20px;
 }
 
-#Tetris{
-
+#Tetris:hover{
+    background-image:url("../img/jogos/tetris.gif");
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+    background-size: 100% 100px;
 }
 
 #The{
@@ -224,9 +249,13 @@ nav button{
     border-radius: 20px;
 }
 
-#The-king-of-fighters-97{
-
+#The-king-of-fighters-97:hover{
+    background-image:url("../img/jogos/fi.gif");
+    background-repeat: no-repeat;
+    background-position: 110% 95%;
+    background-size: 130px 100px;
 }
+
 
 /* PREÇO */
 

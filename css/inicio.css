@@ -9,10 +9,33 @@ nav ul {
 }
 nav ul li {
     display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 10px; /* Espaço entre os botões */
+    margin-right: 4%; /* Espaço entre os botões */
+    
 }
 button{
     border-radius: 20px; /* Arredonda a Borda */
     font-size: 18px; /* Aumenta o Tamanho do Botão */
+    
+}
+button:hover{
+transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+header {
+    margin-top: 70px;
 }
 
+nav button{
+    border-radius: 20px; /* Arredonda a Borda */
+    font-size: 18px; /* Aumenta o Tamanho do Botão */
+    width: 150%;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}

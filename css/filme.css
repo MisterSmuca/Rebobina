@@ -31,17 +31,30 @@ nav ul {
     text-align: center; /* Centraliza o Menu  */
     list-style-type: none; /* Remove as bolinhas da lista */
     padding: 0; /* Remove o espaçamento */
-    display: flex;
-    flex-wrap: wrap; /* quebra linha em telas pequenas */
-    justify-content: center;
+    
 }
-
 nav ul li {
-    margin: 5px; /* Espaço entre os botões, funciona em qualquer tamanho de tela */
+    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
+    margin-right: 4%; /* Espaço entre os botões */
+    
 }
 button{
     border-radius: 20px; /* Arredonda a Borda */
     font-size: 18px; /* Aumenta o Tamanho do Botão */
+}
+nav button{
+    border-radius: 20px; /* Arredonda a Borda */
+    font-size: 18px; /* Aumenta o Tamanho do Botão */
+    width: 150%;
+   
+}
+nav{
+    margin-top: 20px;
+}
+button:hover{
+transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    transition: 0.3s;
 }
 #carouselExampleFade .carousel-item img {
   height: 600px;
@@ -54,6 +67,8 @@ button{
     padding-bottom: 50px;
     margin-top: 50px;
 }
+
+
 
 /* CARD DOS FILMES */
 
