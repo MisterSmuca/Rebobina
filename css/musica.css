@@ -1,8 +1,8 @@
 body {
-    background-color: white; /* Fundo de Tela */
+    background-color: rgb(56, 54, 54); /* Fundo de Tela */
     border:solid black 20px;
-   
-    background-image: url("../img/musica/musical-notes.gif");
+    background-image:url("../img/musica/f.jpg") ;
+    
     background-size: 110px 110px;
     
     background-position: 64% -89%;
@@ -50,7 +50,20 @@ nav button{
    
 }
 
-
+#Rocket-man button{
+    
+    background: #746a41;
+    
+}
+#Rocket-man button:hover{
+    background: #4e4514;
+}
+#Opis button{
+    background:rgb(189, 58, 97)1;
+}
+#Opis button:hover{
+    background: rgb(107, 31, 53);
+}
 /* TÍTULO */
 
 .titulo{
@@ -86,7 +99,7 @@ nav button{
     transition: 0.3s;
 
     width: 110%;
-    height: 365px;
+    height: 560px;
 }
 
 .card:hover{
