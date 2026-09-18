@@ -1,14 +1,28 @@
+html, body {
+    height: 100%;
+}
+
 body {
-  background-image: url('../img/filmes/vhs2.jpg');
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-image: url('../img/filmes/poltronas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* efeito parallax */
 }
+
+main {
+    flex: 1; /* empurra o rodapé pra baixo */
+}
+
 h1 {
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
+    font-size: 60px;
 }
 header {
     margin-top: 20px;
@@ -17,33 +31,31 @@ nav ul {
     text-align: center; /* Centraliza o Menu  */
     list-style-type: none; /* Remove as bolinhas da lista */
     padding: 0; /* Remove o espaçamento */
+    display: flex;
+    flex-wrap: wrap; /* quebra linha em telas pequenas */
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 10px; /* Espaço entre os botões */
+    margin: 5px; /* Espaço entre os botões, funciona em qualquer tamanho de tela */
 }
 button{
     border-radius: 20px; /* Arredonda a Borda */
     font-size: 18px; /* Aumenta o Tamanho do Botão */
 }
 #carouselExampleFade .carousel-item img {
-  height: 600px;    
-  width: 100%;   
-  object-fit: cover; 
-  object-position: center;   
-  
-}
-.catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 35px;
-    justify-content: center;
-    padding-bottom: 50px;
-    margin-top: 50px; 
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* CARD DAS NOVELAS */
+.catalogo {
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* CARD DOS FILMES */
 
 .card{
     background: #FFFDF7;
@@ -67,7 +79,7 @@ button{
     width: 100%;
     height: 350px;
     object-fit: contain;
-    background-color: #1a1a1a; /* preenche o espaço vazio - escolha uma cor que combine com o tema */
+    background-color: white;
     border-radius: 12px;
 }
 /* NOME DA NOVELA */
@@ -115,4 +127,37 @@ button{
 
 .card button:hover{
     background: #BC6C25;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #8A5A44;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #carouselExampleFade .carousel-item img {
+        height: 300px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
 }
