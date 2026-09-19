@@ -4,241 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="../img/avanco-rapido.png">
     <link rel="stylesheet" href="../css/filme.css">
     <title>Filmes</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><button type="button" onclick="window.location.href='../html/inicio.html'">Início</button></li>
-                <li><button type="button" onclick="window.location.href='../html/filme.html'">Filme</button></li>
-                <li><button type="button" onclick="window.location.href='../html/serie.html'">Série</button></li>
-                <li><button type="button" onclick="window.location.href='../html/novela.html'">Novela</button></li>
-                <li><button type="button" onclick="window.location.href='../html/musica.html'">Música</button></li>
-                <li><button type="button" onclick="window.location.href='../html/jogos.html'">Jogos</button></li>
-                <li><button type="button" onclick="window.location.href='../html/formdecmp.html'">Formulário</button></li>
-                <li><button type="button" onclick="window.location.href='../html/recibo.html'">Recibo</button></li>
-            </ul>
-        </nav>
-    </header>
+    </head>
+    <body>
+        <header>
+            <nav>
+                    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-white); --bs-nav-pills-link-active-bg: var(--bs-black); --bs-nav-link-hover-color: var(--bs-gray-600);">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active rounded-5" href="../html/inicio.html">Início</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link rounded-5" href="../html/filme.html">Filmes</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link rounded-5" href="../html/serie.html">Séries</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link rounded-5" href="../html/novela.html">Novelas</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link rounded-5" href="../html/musica.html">Músicas</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link rounded-5" href="../html/jogos.html">Jogos</a>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
 
-    <main>
+        <h2 class="titulo">Cátalogo de Filmes</h2>
 
-        <h1>Catálogo de Filmes</h1>
+        <section class="catalogo">
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/filmes/bad-boys - capa.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/filmes/exterminador 2 - capa.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/filmes/esqueceram de mim - capa.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/filmes/titanic - capa.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/filmes/o mascara - capa.png" class="d-block w-100">
-                </div>
+            <div class="card">
+                <img src="../img/filmes/bad boys - card.jpg">
+                <h3>Bad Boys</h3>
+                <p>Ação/Comédia</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-        <section class="catalogo container-fluid">
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/bad boys - card.jpg">
-                        <h3>Bad-Boys</h3>
-                        <p>Ação</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/bad boys 2 - card.webp">
-                        <h3>Bad Boys 2</h3>
-                        <p>Ação/Comédia</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/O Exterminador do futuro 1.jpg" alt="">
-                        <h3>O Exterminador do Futuro</h3>
-                        <p>Ação/Ficção científica</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/exterminador 2 - card.jpg">
-                        <h3>O Exterminador do Futuro 2: O Julgamento Final</h3>
-                        <p>Ação/Ficção científica</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/esqueceram de mim - card.jpg">
-                        <h3>Esqueceram de Mim</h3>
-                        <p>Infantil/Comédia</p>
-                        <p class="preco">R$ 3,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/Titanic - card.jpg">
-                        <h3>Titanic</h3>
-                        <p>Romance/Aventura</p>
-                        <p class="preco">R$ 5,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/o mascara - card.jpg">
-                        <h3>O máskara</h3>
-                        <p>Comédia/Ação</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/panico - card.jpg">
-                        <h3>Pânico</h3>
-                        <p>Terror/Mistério</p>
-                        <p class="preco">R$ 6,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/a hora do pesadelo - card.jpg">
-                        <h3>A Hora do Pesadelo</h3>
-                        <p>Terror/Crime</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/RoboCop - card.jpg">
-                        <h3>Robocop</h3>
-                        <p>Ação/Ficção científica</p>
-                        <p class="preco">R$ 3,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/eduardo - card.jpg">
-                        <h3>Edward Mãos de Tesoura</h3>
-                        <p>Fantasia/Romance</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/de volta pro futuro.jpg">
-                        <h3>De Volta para o Futuro</h3>
-                        <p>Ficção científica/Comédia</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/de volta pro futuro 2 - card.jpg">
-                        <h3>De Volta para o Futuro 2</h3>
-                        <p>Ficção científica/Comédia</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/filmes/de volta pro futuro 3 - card.jpeg">
-                        <h3>De Volta para o Futuro 3</h3>
-                        <p>Ficção científica/Comédia</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="" alt="">
-                        <h3>la</h3>
-                        <p>lala</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="" alt="">
-                        <h3>la</h3>
-                        <p>lala</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="" alt="">
-                        <h3>la</h3>
-                        <p>lala</p>
-                        <p class="preco">R$ 4,99</p>
-                        <button>Alugar</button>
-                    </div>
-                </div>
-
+            <div class="card">
+                <img src="../img/filmes/Bad Boys II - card.jpg">
+                <h3>Bad Boys II</h3>
+                <p> Ação/Comédia</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
             </div>
+
+            <div class="card">
+                <img src="../img/filmes/O Exterminador do futuro 1.jpg">
+                <h3>O Exterminador do Futuro</h3>
+                <p>Ação/Ficção científica</p>
+                <p class="preco">R$ 3,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/exterminador 2 - card.jpg">
+                <h3>O Exterminador do Futuro 2: O Julgamento Final</h3>
+                <p>Ação/Ficção científica</p>
+                <p class="preco">R$ 5,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/o mascara - card.jpg">
+                <h3>O Máskara</h3>
+                <p>Comédia/Ação</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/débie lóide - card.jpg">
+                <h3>Debi & Lóide: Dois Idiotas em Apuros</h3>
+                <p>Comédia/Comédia maluca</p>
+                <p class="preco">R$ 6,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/panico - card.jpg">
+                <h3>Pânico</h3>
+                <p>Terror/Mistério</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/panico 2 - card.jpg">
+                <h3>Pânico 2</h3>
+                <p>Terror/Mistério</p>
+                <p class="preco">R$ 3,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/a hora do pesadelo - card.jpg">
+                <h3>A Hora do Pesadelo</h3>
+                <p>Terror/Crime</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/a hora do pesadelo 2 -card.jpg">
+                <h3>A Hora do Pesadelo 2: A Vingança de Freddy</h3>
+                <p>Terror/Crime</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/Titanic - card.jpg">
+                <h3>Titanic</h3>
+                <p>Romance/Aventura</p>
+                <p class="preco">R$ 3,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/meu primeiro amor - card.jpg">
+                <h3>Meu Primeiro Amor</h3>
+                <p>Infantil/Romance</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/de volta pro futuro.jpg">
+                <h3>De Volta para o Futuro</h3>
+                <p>Ficção científica/Comédia</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/de volta pro futuro 2 - card.jpg">
+                <h3>De Volta para o Futuro 2</h3>
+                <p>Ficção científica/Infantil</p>
+                <p class="preco">R$ 3,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/de volta pro futuro 3 - card.jpeg" alt="">
+                <h3>De Volta para o Futuro 3</h3>
+                <p>Faroeste/Infantil</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/corra que a policia vem aí - card.jpg">
+                <h3>Corra que a Polícia Vem Aí!</h3>
+                <p>Comédia/Ação</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/corra que a policia vem aí 2 - card.jpg">
+                <h3>Corra que a Polícia Vem Aí 2½</h3>
+                <p>Comédia/Crime</p>
+                <p class="preco">R$ 3,99</p>
+                <button>Alugar</button>
+            </div>
+
+            <div class="card">
+                <img src="../img/filmes/corra que a policia vem aí 3 - card.jpg">
+                <h3>ACorra que a Polícia Vem Aí! 33 1/3 - O Insulto Final</h3>
+                <p>Comédia/Crime</p>
+                <p class="preco">R$ 4,99</p>
+                <button>Alugar</button>
+            </div>
+
         </section>
 
-    </main>
-
-    <footer>
-        <div class="container">
-            <p class="mb-0">&copy; 2026 Rebobina. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+        <script src="menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     </body>
 </html>

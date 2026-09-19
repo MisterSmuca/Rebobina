@@ -39,3 +39,27 @@ nav button{
     box-sizing: border-box;
     font-family: 'Trebuchet MS', sans-serif;
 }
+/* RESPONSIVO */
+
+@media (max-width: 1000px){
+    .catalogo{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 700px){
+    .catalogo{
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    .titulo{
+        font-size: 35px;
+        margin: 25px 10px;
+    }
+}

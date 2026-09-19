@@ -130,6 +130,17 @@ body{
 
 @media (max-width: 700px){
     .catalogo{
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    .titulo{
+        font-size: 35px;
+        margin: 25px 10px;
     }
 }
