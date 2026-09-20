@@ -98,7 +98,7 @@ nav button{
     transition: 0.3s;
 
     width: 100%;
-    height: 365px;
+    height: 450px;
 }
 
 .card:hover{
@@ -133,20 +133,27 @@ nav button{
 #pac{
     width: 220px;
     height: 110px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 #pac-man:hover{
     background-image:url("../img/jogos/pachover1.gif");
-    background-position: 64% -58%;
+    background-position: 64% -280%;
 }
 
 #mari{
     width: 220px;
     height: 100px;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 #mario:hover{
     background-image:url("../img/jogos/dequpxt-1bebfb58-ca59-4696-8a69-42d40657bede.gif");
     background-repeat: no-repeat;
-     background-position: 100% 95%;
+     background-position: 110% 95%;
        
 }
 
@@ -154,11 +161,14 @@ nav button{
     width: 220px;
     height: 110px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 #sonic:hover{
     background-image:url("../img/jogos/download.gif");
     background-repeat: no-repeat;
-    background-position: -950% 120%;
+    background-position: -950% 115%;
      background-size: 300px 150px;
 }
 #mario-kart:hover{
@@ -171,7 +181,9 @@ nav button{
 #maka{
     width: 220px;
     height: 110px;
-    border-radius: 20px;
+    border-radius: 20px;display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Mortal-Kombat{
@@ -185,6 +197,9 @@ nav button{
     width: 220px;
     height: 110px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Donkey-kong:hover{
@@ -198,6 +213,9 @@ nav button{
     width: 220px;
     height: 110px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Mortal-Kombat:hover {
@@ -207,15 +225,18 @@ nav button{
 
     background-repeat: no-repeat, no-repeat;
 
-    background-position: 95% 95%, -5% 95%;
+    background-position: 100% 95%, -5% 95%;
 
-    background-size: 100px 110px, 125px 135px;
+    background-size: 80px 90px, 105px 115px;
 }
 
 #Stree{
     width: 220px;
     height: 110px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Street-Fighter:hover{
@@ -225,7 +246,7 @@ nav button{
 
     background-repeat: no-repeat, no-repeat;
 
-    background-position: 95% 95%, -5% 95%;
+    background-position: 98% 95%, 0% 95%;
 
     background-size: 80px 90px, 105px 115px;
 }
@@ -234,6 +255,9 @@ nav button{
     width: 220px;
     height: 115px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Tetris:hover{
@@ -247,6 +271,9 @@ nav button{
     width: 220px;
     height: 110px;
     border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #The-king-of-fighters-97:hover{
@@ -283,6 +310,12 @@ nav button{
     font-weight: bold;
 
     transition: 0.3s;
+    width: 50%;
+    height: 13%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 .card button:hover{
