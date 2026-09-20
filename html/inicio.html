@@ -1,61 +1,596 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="icon" href="../img/avanco-rapido.png">
     <link rel="stylesheet" href="../css/inicio.css">
+
     <title>Rebobina</title>
 </head>
+
 <body>
+
+    <!-- MENU -->
     <header>
         <nav>
-            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5" id="pillNav2"
-                role="tablist"
-                style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-white); --bs-nav-pills-link-active-bg: var(--bs-black); --bs-nav-link-hover-color: var(--bs-gray-600);">
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5"
+                id="pillNav2" role="tablist"
+                style="--bs-nav-link-color: var(--bs-black);
+                --bs-nav-pills-link-active-color: var(--bs-white);
+                --bs-nav-pills-link-active-bg: var(--bs-black);
+                --bs-nav-link-hover-color: var(--bs-gray-600);">
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/inicio.html">Início</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/filme.html">Filmes</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/serie.html">Séries</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/novela.html">Novelas</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/musica.html">Músicas</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-5" href="../html/jogos.html">Jogos</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/formulario.html">Formulário</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-                <footer class="bg-dark py-4">
-                    <p class="text-white text-center">© 2026 Rebobina</p>
-                    <div class="d-flex justify-content-center gap-3 fs-4">
-                        <a href="https://www.instagram.com/rebobina_locadora_retro/" target="_blank" class="text-white">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="formdecmp.html" class="text-white">
-                            <i class="bi bi-file-earmark-text"></i>
-                        </a>
-                        <a href="cadastro.html" class="text-white">
-                            <i class="bi bi-person-plus"></i>
-                        </a>
-                    </div>
-                </footer>
+    <main>
 
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <span class="badge rounded-pill text-bg-light px-4 py-2 mb-3">
+                            📼 LOCADORA RETRÔ
+                        </span>
+
+                        <h1 class="display-1 fw-bold">REBOBINA</h1>
+
+                        <h2 class="display-6 fw-semibold">
+                            A nostalgia nunca sai de moda.
+                        </h2>
+
+                        <p class="lead mt-4">
+                            Filmes, séries, novelas, músicas e jogos
+                            para você voltar no tempo sem sair do sofá.
+                        </p>
+
+                        <div class="mt-4">
+                            <a href="../html/filme.html"
+                                class="btn btn-dark btn-lg rounded-pill px-5">
+                                🎬 Explorar catálogo
+                            </a>
+
+                            <a href="#categorias"
+                                class="btn btn-outline-dark btn-lg rounded-pill px-5 ms-2">
+                                📼 Categorias
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                        <div class="vhs-card">
+
+                            <div class="vhs-label">
+                                <span>REBOBINA</span>
+                                <small>LOCADORA • 1990</small>
+                            </div>
+
+                            <div class="vhs-reels">
+                                <div class="reel"></div>
+                                <div class="reel"></div>
+                            </div>
+
+                            <div class="vhs-line"></div>
+
+                            <div class="vhs-bottom">
+                                <span>PLAY</span>
+                                <span>▶</span>
+                                <span>REW</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FRASE -->
+        <section class="py-5 bg-white text-center">
+            <div class="container py-4">
+
+                <p class="text-uppercase fw-bold text-secondary">
+                    📺 Aperte o play
+                </p>
+
+                <h2 class="display-6 fw-bold">
+                    "Algumas histórias merecem ser rebobinadas."
+                </h2>
+
+                <p class="text-muted mt-3">
+                    Escolha seu título, pegue sua fita e aproveite a sessão.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section id="categorias" class="categorias py-5">
+            <div class="container py-4">
+
+                <div class="text-center mb-5">
+                    <span class="badge rounded-pill text-bg-dark px-4 py-2">
+                        NOSSO CATÁLOGO
+                    </span>
+
+                    <h2 class="display-5 fw-bold mt-3">
+                        O que você quer assistir hoje?
+                    </h2>
+
+                    <p class="text-muted">
+                        Tem nostalgia para todo tipo de gosto.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="categoria-card h-100">
+                            <div class="icone">🎬</div>
+                            <h3>Filmes</h3>
+
+                            <p>
+                                Clássicos, comédias, terror,
+                                aventura e muito mais.
+                            </p>
+
+                            <a href="../html/filme.html"
+                                class="btn btn-dark rounded-pill">
+                                Ver filmes
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="categoria-card h-100">
+                            <div class="icone">📺</div>
+                            <h3>Séries</h3>
+
+                            <p>
+                                As séries que marcaram
+                                gerações inteiras.
+                            </p>
+
+                            <a href="../html/serie.html"
+                                class="btn btn-dark rounded-pill">
+                                Ver séries
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="categoria-card h-100">
+                            <div class="icone">📼</div>
+                            <h3>Novelas</h3>
+
+                            <p>
+                                Grandes histórias da
+                                televisão brasileira.
+                            </p>
+
+                            <a href="../html/novela.html"
+                                class="btn btn-dark rounded-pill">
+                                Ver novelas
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="categoria-card h-100">
+                            <div class="icone">🕹️</div>
+                            <h3>Jogos</h3>
+
+                            <p>
+                                Clássicos que fizeram
+                                história nos videogames.
+                            </p>
+
+                            <a href="../html/jogos.html"
+                                class="btn btn-dark rounded-pill">
+                                Ver jogos
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSA HISTÓRIA -->
+        <section class="historia py-5">
+            <div class="container py-4">
+
+                <div class="text-center mb-5">
+                    <span class="badge rounded-pill text-bg-dark px-4 py-2">
+                        📼 NOSSA HISTÓRIA
+                    </span>
+
+                    <h2 class="display-5 fw-bold mt-3">
+                        Quatro pessoas. Uma locadora. Mil histórias.
+                    </h2>
+
+                    <p class="text-muted historia-intro">
+                        A Rebobina nasceu da vontade de transformar
+                        nostalgia em uma experiência digital.
+                    </p>
+                </div>
+
+                <!-- ABERTURA -->
+                <div class="historia-abertura mb-5">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 text-center">
+                            <div class="historia-fita">
+
+                                <div class="fita-topo">
+                                    <span>VHS</span>
+                                    <span>REBOBINA</span>
+                                </div>
+
+                                <div class="fita-corpo">
+                                    <div class="fita-rolo"></div>
+                                    <div class="fita-rolo"></div>
+                                </div>
+
+                                <div class="fita-nome">
+                                    PLAY • PAUSE • REWIND
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+
+                            <span class="historia-numero">
+                                CAPÍTULO 01
+                            </span>
+
+                            <h3 class="fw-bold mt-2">
+                                Uma ideia que ganhou forma
+                            </h3>
+
+                            <p>
+                                Quatro integrantes, diferentes ideias e
+                                uma missão em comum: criar uma locadora
+                                online com aquele gostinho das antigas.
+                            </p>
+
+                            <p>
+                                Assim surgiu a Rebobina, reunindo filmes,
+                                séries, novelas, músicas e jogos em um só
+                                lugar.
+                            </p>
+
+                            <div class="palavra-rebobina">
+                                "DÊ O PLAY NA NOSTALGIA."
+                            </div>
+
+                            <p>
+                                Cada parte do projeto ficou nas mãos de um
+                                integrante. Cada página ganhou sua própria
+                                identidade e, juntas, elas formaram a
+                                nossa locadora.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESCOLHA POR MIM -->
+                <section class="escolha py-5">
+                    <div class="container py-5 text-center">
+
+                        <span class="badge rounded-pill text-bg-dark px-4 py-2">
+                            🎲 NÃO SABE O QUE ESCOLHER?
+                        </span>
+
+                        <h2 class="display-5 fw-bold mt-3">
+                            Deixa a Rebobina decidir!
+                        </h2>
+
+                        <p class="lead text-muted">
+                            Aperte o botão e descubra qual categoria combina com você hoje.
+                        </p>
+
+                        <button id="botaoEscolher"
+                            class="btn btn-dark btn-lg rounded-pill px-5 mt-3">
+                            🎲 Escolha por mim!
+                        </button>
+
+                        <div id="resultadoEscolha"
+                            class="resultado-escolha mt-5">
+
+                            <div class="icone-escolha">📼</div>
+
+                            <h3>
+                                Sua próxima sessão está esperando...
+                            </h3>
+
+                            <p>
+                                Clique no botão para descobrir!
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- INTEGRANTES -->
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="historia-card h-100">
+
+                            <div class="historia-icone">📼</div>
+
+                            <span class="capitulo">CAPÍTULO 02</span>
+
+                            <h3>Nayara</h3>
+
+                            <p>
+                                Ficou responsável pela criação da página
+                                inicial e pela área de novelas. Foi quem
+                                ajudou a dar forma à identidade da Rebobina,
+                                conectando a apresentação do projeto com
+                                uma das categorias mais marcantes da
+                                televisão brasileira.
+                            </p>
+
+                            <div class="responsabilidade">
+                                <strong>Responsável por:</strong><br>
+                                🏠 Início<br>
+                                📺 Novelas
+                            </div>
+
+                            <div class="frase-card">
+                                "Toda boa história precisa de um começo."
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="historia-card h-100">
+
+                            <div class="historia-icone">💬</div>
+
+                            <span class="capitulo">CAPÍTULO 03</span>
+
+                            <h3>Lucas</h3>
+
+                            <p>
+                                Ficou responsável pela comunicação com o
+                                público. Desenvolveu as áreas de Cadastro,
+                                Pesquisa de Satisfação e Reclame Aqui,
+                                criando espaços para o usuário participar,
+                                avaliar e deixar sua opinião.
+                            </p>
+
+                            <div class="responsabilidade">
+                                <strong>Responsável por:</strong><br>
+                                📝 Cadastro<br>
+                                ⭐ Pesquisa de Satisfação<br>
+                                💬 Reclame Aqui
+                            </div>
+
+                            <div class="frase-card">
+                                "Uma locadora também precisa ouvir seus clientes."
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="historia-card h-100">
+
+                            <div class="historia-icone">🎬</div>
+
+                            <span class="capitulo">CAPÍTULO 04</span>
+
+                            <h3>Júlio</h3>
+
+                            <p>
+                                Ficou responsável pelos filmes e pelas
+                                séries. Trouxe para a Rebobina títulos
+                                clássicos e personagens que marcaram
+                                diferentes gerações.
+                            </p>
+
+                            <div class="responsabilidade">
+                                <strong>Responsável por:</strong><br>
+                                🎬 Filmes<br>
+                                📺 Séries
+                            </div>
+
+                            <div class="frase-card">
+                                "Toda sessão começa com uma boa escolha."
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="historia-card h-100">
+
+                            <div class="historia-icone">🕹️</div>
+
+                            <span class="capitulo">CAPÍTULO 05</span>
+
+                            <h3>Samuel</h3>
+
+                            <p>
+                                Ficou responsável pelo universo dos jogos
+                                e das músicas. Trouxe para o projeto os
+                                clássicos dos videogames e os sons que
+                                fizeram parte de diferentes épocas.
+                            </p>
+
+                            <div class="responsabilidade">
+                                <strong>Responsável por:</strong><br>
+                                🕹️ Jogos<br>
+                                🎵 Músicas
+                            </div>
+
+                            <div class="frase-card">
+                                "Algumas memórias a gente joga. Outras a gente escuta."
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FINAL DA HISTÓRIA -->
+                <div class="historia-final text-center mt-5">
+
+                    <span class="badge rounded-pill bg-dark px-4 py-2">
+                        📼 FINAL DA FITA
+                    </span>
+
+                    <h3 class="display-6 fw-bold mt-3">
+                        E assim nasceu a REBOBINA.
+                    </h3>
+
+                    <p class="lead">
+                        Cada integrante trouxe uma parte.
+                        Juntos, criamos uma experiência inteira.
+                    </p>
+
+                    <p class="text-muted">
+                        Filmes, séries, novelas, músicas, jogos,
+                        cadastro e a opinião de quem visita.
+                        Tudo reunido em uma única locadora.
+                    </p>
+
+                    <a href="../html/filme.html"
+                        class="btn btn-dark btn-lg rounded-pill px-5 mt-3">
+                        🎬 Começar a viagem
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DESTAQUE -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container py-4">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <span class="badge rounded-pill bg-warning text-dark px-3 py-2">
+                            ⭐ DESTAQUE DA SEMANA
+                        </span>
+
+                        <h2 class="display-5 fw-bold mt-3">
+                            Uma viagem no tempo começa aqui.
+                        </h2>
+
+                        <p class="lead text-white-50 mt-3">
+                            Relembre personagens, músicas e histórias
+                            que fizeram parte de diferentes gerações.
+                        </p>
+
+                        <a href="../html/novela.html"
+                            class="btn btn-light btn-lg rounded-pill px-5 mt-3">
+                            📼 Conferir catálogo
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0">
+
+                        <div class="tv-retro">
+
+                            <div class="tv-screen">
+                                <span>▶</span>
+                                <strong>REBOBINA</strong>
+                                <small>PLAYING...</small>
+                            </div>
+
+                            <div class="tv-controls">
+                                ● ● ●
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark py-4">
+        <p class="text-white text-center">© 2026 Rebobina</p>
+
+        <div class="d-flex justify-content-center gap-3 fs-4">
+
+            <a href="https://www.instagram.com/rebobina_locadora_retro/"
+                target="_blank"
+                class="text-white">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="formulario.html" class="text-white">
+                <i class="bi bi-file-earmark-text"></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
     <script src="../js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/inicio.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
 </body>
 </html>
+
+
+
