@@ -59,19 +59,12 @@ transform: translateY(-5px);
 /* CARD DAS NOVELAS */
 
 .card{
-    background: #ffffff;
+    background: #FFFDF7;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    
-    border: 5px solid #000000;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-
     transition: 0.3s;
-
-    width: 110%;
-    height: 560px;
 }
 
 .card:hover{
