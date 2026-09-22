@@ -1,209 +1,416 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="icon" href="../img/avanco-rapido.png">
     <link rel="stylesheet" href="../css/filme.css">
+
     <title>Filmes</title>
-    </head>
-    <body>
-        <header>
-        <nav>
-            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5" id="pillNav2"
+</head>
+
+<body>
+
+    <header>
+
+        <nav aria-label="Navegação principal">
+
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5"
+                id="pillNav2"
                 role="tablist"
-                style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-white); --bs-nav-pills-link-active-bg: var(--bs-black); --bs-nav-link-hover-color: var(--bs-gray-600);">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/inicio.html">Início</a>
+                style="--bs-nav-link-color: var(--bs-black);
+                       --bs-nav-pills-link-active-color: var(--bs-white);
+                       --bs-nav-pills-link-active-bg: var(--bs-black);
+                       --bs-nav-link-hover-color: var(--bs-gray-600);">
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/inicio.html">
+                        Início
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/filme.html">Filmes</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/filme.html">
+                        Filmes
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/serie.html">Séries</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/serie.html">
+                        Séries
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/novela.html">Novelas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/musica.html">
+                        Músicas
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/musica.html">Músicas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/jogos.html">
+                        Jogos
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/jogos.html">Jogos</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/formulario.html">
+                        Formulário
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/formulario.html">Formulário</a>
-                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-        <h2 class="titulo">Cátalogo de Filmes</h2>
 
-        <section class="catalogo">
+    <main>
 
-            <div class="card">
-                <img src="../img/filmes/bad boys - card.jpg">
+        <h1 class="titulo">Catálogo de Filmes</h1>
+
+        <section class="catalogo" aria-label="Filmes disponíveis">
+
+            <article class="card">
+
+                <img src="../img/filmes/bad boys - card.jpg"
+                    alt="Capa do filme Bad Boys">
+
                 <h3>Bad Boys</h3>
+
                 <p>Ação/Comédia</p>
-                <p class="preco">R$ 11,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/Bad Boys II - card.jpg">
+                <p class="preco">R$ 11,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/Bad Boys II - card.jpg"
+                    alt="Capa do filme Bad Boys II">
+
                 <h3>Bad Boys II</h3>
-                <p> Ação/Comédia</p>
+
+                <p>Ação/Comédia</p>
+
                 <p class="preco">R$ 11,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/O Exterminador do futuro 1.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/O Exterminador do futuro 1.jpg"
+                    alt="Capa do filme O Exterminador do Futuro">
+
                 <h3>O Exterminador do Futuro</h3>
-                <p>Ação/Ficção científica</p>
-                <p class="preco">R$ 9,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/exterminador 2 - card.jpg">
+                <p>Ação/Ficção científica</p>
+
+                <p class="preco">R$ 9,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/exterminador 2 - card.jpg"
+                    alt="Capa do filme O Exterminador do Futuro 2">
+
                 <h3>O Exterminador do Futuro 2: O Julgamento Final</h3>
+
                 <p>Ação/Ficção científica</p>
-                <p class="preco">R$ 9,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/o mascara - card.jpg">
+                <p class="preco">R$ 9,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/o mascara - card.jpg"
+                    alt="Capa do filme O Máskara">
+
                 <h3>O Máskara</h3>
-                <p>Comédia/Ação</p>
-                <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/débie lóide - card.jpg">
+                <p>Comédia/Ação</p>
+
+                <p class="preco">R$ 12,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/débie lóide - card.jpg"
+                    alt="Capa do filme Debi & Lóide: Dois Idiotas em Apuros">
+
                 <h3>Debi & Lóide: Dois Idiotas em Apuros</h3>
+
                 <p>Comédia/Comédia maluca</p>
+
                 <p class="preco">R$ 15,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/panico - card.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/panico - card.jpg"
+                    alt="Capa do filme Pânico">
+
                 <h3>Pânico</h3>
-                <p>Terror/Mistério</p>
-                <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/panico 2 - card.jpg">
+                <p>Terror/Mistério</p>
+
+                <p class="preco">R$ 12,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/panico 2 - card.jpg"
+                    alt="Capa do filme Pânico 2">
+
                 <h3>Pânico 2</h3>
+
                 <p>Terror/Mistério</p>
+
                 <p class="preco">R$ 10,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/a hora do pesadelo - card.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/a hora do pesadelo - card.jpg"
+                    alt="Capa do filme A Hora do Pesadelo">
+
                 <h3>A Hora do Pesadelo</h3>
-                <p>Terror/Crime</p>
-                <p class="preco">R$ 14,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/a hora do pesadelo 2 -card.jpg">
+                <p>Terror/Crime</p>
+
+                <p class="preco">R$ 14,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/a hora do pesadelo 2 -card.jpg"
+                    alt="Capa do filme A Hora do Pesadelo 2">
+
                 <h3>A Hora do Pesadelo 2: A Vingança de Freddy</h3>
+
                 <p>Terror/Crime</p>
-                <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/Titanic - card.jpg">
+                <p class="preco">R$ 12,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/Titanic - card.jpg"
+                    alt="Capa do filme Titanic">
+
                 <h3>Titanic</h3>
+
                 <p>Romance/Aventura</p>
+
                 <p class="preco">R$ 8,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/meu primeiro amor - card.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/meu primeiro amor - card.jpg"
+                    alt="Capa do filme Meu Primeiro Amor">
+
                 <h3>Meu Primeiro Amor</h3>
+
                 <p>Infantil/Romance</p>
-                <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/de volta pro futuro.jpg">
+                <p class="preco">R$ 12,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/de volta pro futuro.jpg"
+                    alt="Capa do filme De Volta para o Futuro">
+
                 <h3>De Volta para o Futuro</h3>
+
                 <p>Ficção científica/Comédia</p>
+
                 <p class="preco">R$ 9,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/de volta pro futuro 2 - card.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/de volta pro futuro 2 - card.jpg"
+                    alt="Capa do filme De Volta para o Futuro 2">
+
                 <h3>De Volta para o Futuro 2</h3>
+
                 <p>Ficção científica/Infantil</p>
-                <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/de volta pro futuro 3 - card.jpeg" alt="">
+                <p class="preco">R$ 12,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/de volta pro futuro 3 - card.jpeg"
+                    alt="Capa do filme De Volta para o Futuro 3">
+
                 <h3>De Volta para o Futuro 3</h3>
+
                 <p>Faroeste/Infantil</p>
-                <p class="preco">R$ 14,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/corra que a policia vem aí - card.jpg">
+                <p class="preco">R$ 14,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/corra que a policia vem aí - card.jpg"
+                    alt="Capa do filme Corra que a Polícia Vem Aí!">
+
                 <h3>Corra que a Polícia Vem Aí!</h3>
+
                 <p>Comédia/Ação</p>
+
                 <p class="preco">R$ 12,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/corra que a policia vem aí 2 - card.jpg">
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/corra que a policia vem aí 2 - card.jpg"
+                    alt="Capa do filme Corra que a Polícia Vem Aí 2½">
+
                 <h3>Corra que a Polícia Vem Aí 2½</h3>
-                <p>Comédia/Crime</p>
-                <p class="preco">R$ 14,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="../img/filmes/corra que a policia vem aí 3 - card.jpg">
-                <h3>ACorra que a Polícia Vem Aí! 33 1/3 - O Insulto Final</h3>
                 <p>Comédia/Crime</p>
+
                 <p class="preco">R$ 14,99</p>
-                <button>Comprar</button>
-            </div>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <img src="../img/filmes/corra que a policia vem aí 3 - card.jpg"
+                    alt="Capa do filme Corra que a Polícia Vem Aí! 33 1/3</">
+
+                <h3>Corra que a Polícia Vem Aí! 33 1/3 - O Insulto Final</h3>
+
+                <p>Comédia/Crime</p>
+
+                <p class="preco">R$ 14,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
 
         </section>
 
-                <footer class="bg-dark py-4">
-                    <p class="text-white text-center">© 2026 Rebobina</p>
-                    <div class="d-flex justify-content-center gap-3 fs-4">
-                        <a href="https://www.instagram.com/rebobina_locadora_retro/" target="_blank" class="text-white">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="formulario.html" class="text-white">
-                            <i class="bi bi-file-earmark-text"></i>
-                        </a>
-                    </div>
-                </footer>
+    </main>
 
-        <script src="../js/menu.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="../js/alugar.js"></script>       
-    </body>
+
+    <footer class="bg-dark py-4">
+
+        <p class="text-white text-center">
+            © 2026 Rebobina
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 fs-4">
+
+            <a href="https://www.instagram.com/rebobina_locadora_retro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white"
+                aria-label="Instagram da Rebobina">
+
+                <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="formulario.html"
+                class="text-white"
+                aria-label="Formulário">
+
+                <i class="bi bi-file-earmark-text"></i>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/alugar.js"></script>
+
+</body>
+
 </html>

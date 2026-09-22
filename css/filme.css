@@ -63,7 +63,6 @@ transform: translateY(-5px);
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    border: 2px solid #E8D5A2;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     transition: 0.3s;
 }

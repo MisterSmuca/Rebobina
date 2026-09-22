@@ -2,154 +2,296 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="icon" href="../img/avanco-rapido.png">
+
     <link rel="stylesheet" href="../css/musica.css">
-    <title>Musicas</title>
+
+    <title>Músicas</title>
+
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5" id="pillNav2"
+
+        <nav aria-label="Navegação principal">
+
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5"
+                id="pillNav2"
                 role="tablist"
-                style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-white); --bs-nav-pills-link-active-bg: var(--bs-black); --bs-nav-link-hover-color: var(--bs-gray-600);">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/inicio.html">Início</a>
+                style="--bs-nav-link-color: var(--bs-black);
+                       --bs-nav-pills-link-active-color: var(--bs-white);
+                       --bs-nav-pills-link-active-bg: var(--bs-black);
+                       --bs-nav-link-hover-color: var(--bs-gray-600);">
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/inicio.html">
+                        Início
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/filme.html">Filmes</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/filme.html">
+                        Filmes
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/serie.html">Séries</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/serie.html">
+                        Séries
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/novela.html">Novelas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/musica.html">
+                        Músicas
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/musica.html">Músicas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/jogos.html">
+                        Jogos
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/jogos.html">Jogos</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/formulario.html">
+                        Formulário
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/formulario.html">Formulário</a>
-                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <div class="al">
-        <h2 class="titulo">Músicas Disponíveis para alugar</h2>
 
-        <section class="catalogo">
+    <main>
 
-            <div id="Rocket-man" class="card">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/3gdewACMIVMEWVbyb8O9sY?utm_source=generator&si=df934abd902f491d"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+        <h1 class="titulo">Músicas disponíveis para alugar</h1>
+
+        <section class="catalogo" aria-label="Músicas disponíveis">
+
+            <article id="rocket-man" class="card">
+
+                <iframe
+                    src="https://open.spotify.com/embed/track/3gdewACMIVMEWVbyb8O9sY"
+                    width="100%"
+                    height="352"
+                    style="border-radius:12px"
+                    frameborder="0"
+                    allowfullscreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+                    loading="lazy"
+                    title="Rocket Man no Spotify">
+                </iframe>
+
                 <h3>Rocket Man</h3>
-                <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/3FAclTFfvUuQYnEsptbK8w?utm_source=generator&si=4cb285d9e7b746ff"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <h3>Back to black</h3>
                 <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div id="Opis" class="card">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/6naxalmIoLFWR0siv8dnQQ?utm_source=generator&si=fb16d6c4e51346c2"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <iframe
+                    src="https://open.spotify.com/embed/track/3FAclTFfvUuQYnEsptbK8w"
+                    width="100%"
+                    height="352"
+                    style="border-radius:12px"
+                    frameborder="0"
+                    allowfullscreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+                    loading="lazy"
+                    title="Back to Black no Spotify">
+                </iframe>
+
+                <h3>Back to Black</h3>
+
+                <p class="preco">R$ 4,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article id="oops" class="card">
+
+                <iframe
+                    src="https://open.spotify.com/embed/track/6naxalmIoLFWR0siv8dnQQ"
+                    width="100%"
+                    height="352"
+                    style="border-radius:12px"
+                    frameborder="0"
+                    allowfullscreen
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="Oops I Did It Again no Spotify">
+                </iframe>
+
                 <h3>Oops!... I Did It Again</h3>
-                <p class="preco">R$ 3,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/album/7bxZ0kvGIbJRvBGFrKooub?utm_source=generator&si=37344f5018d54e9f"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                <p class="preco">R$ 3,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <iframe
+                    src="https://open.spotify.com/embed/album/7bxZ0kvGIbJRvBGFrKooub"
+                    width="100%"
+                    height="352"
+                    style="border-radius:12px"
+                    frameborder="0"
+                    allowfullscreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <h3>Índia, de Gal Costa.</h3>
+                    loading="lazy"
+                    title="Álbum Índia de Gal Costa no Spotify">
+                </iframe>
+
+                <h3>Índia, de Gal Costa</h3>
 
                 <p class="preco">R$ 5,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                falta colocar imagem :p
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <p>Falta colocar imagem :p</p>
+
                 <h3>Rei do Gado</h3>
+
                 <p>Família e agronegócio.</p>
-                <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                falta colocar imagem :p
+                <p class="preco">R$ 4,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <p>Falta colocar imagem :p</p>
+
                 <h3>Pantanal</h3>
+
                 <p>Fenômeno nacional.</p>
+
                 <p class="preco">R$ 6,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                falta colocar imagem :p
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <p>Falta colocar imagem :p</p>
+
                 <h3>Caminho das Índias</h3>
+
                 <p>Vencedora do Emmy.</p>
-                <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                falta colocar imagem :p
+                <p class="preco">R$ 4,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
                 <h3>Laços de Família</h3>
-                <p>Emocionante e marcante.</p>
-                <p class="preco">R$ 3,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                falta colocar imagem :p
+                <p>Emocionante e marcante.</p>
+
+                <p class="preco">R$ 3,99</p>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card">
+
+                <p>Falta colocar imagem :p</p>
+
                 <h3>A Viagem</h3>
+
                 <p>Novela espírita clássica.</p>
+
                 <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
-    </div>
-    </section>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+        </section>
+
+    </main>
+
 
     <footer class="bg-dark py-4">
-        <p class="text-white text-center">© 2026 Rebobina</p>
+
+        <p class="text-white text-center">
+            © 2026 Rebobina
+        </p>
+
         <div class="d-flex justify-content-center gap-3 fs-4">
-            <a href="https://www.instagram.com/rebobina_locadora_retro/" target="_blank" class="text-white">
+
+            <a href="https://www.instagram.com/rebobina_locadora_retro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white"
+                aria-label="Instagram da Rebobina">
+
                 <i class="bi bi-instagram"></i>
+
             </a>
-            <a href="formulario.html" class="text-white">
+
+            <a href="formulario.html"
+                class="text-white"
+                aria-label="Formulário">
+
                 <i class="bi bi-file-earmark-text"></i>
+
             </a>
+
         </div>
+
     </footer>
 
+
     <script src="../js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="../js/alugar.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/alugar.js"></script>
+
 </body>
 
 </html>

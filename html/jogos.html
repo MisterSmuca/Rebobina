@@ -4,145 +4,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="icon" href="../img/avanco-rapido.png">
     <link rel="stylesheet" href="../css/jogos.css">
+
     <title>Jogos</title>
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5" id="pillNav2"
+
+        <nav aria-label="Navegação principal">
+
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white rounded-5 shadow-sm mt-5 mx-5"
+                id="pillNav2"
                 role="tablist"
-                style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-white); --bs-nav-pills-link-active-bg: var(--bs-black); --bs-nav-link-hover-color: var(--bs-gray-600);">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/inicio.html">Início</a>
+                style="--bs-nav-link-color: var(--bs-black);
+                       --bs-nav-pills-link-active-color: var(--bs-white);
+                       --bs-nav-pills-link-active-bg: var(--bs-black);
+                       --bs-nav-link-hover-color: var(--bs-gray-600);">
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/inicio.html">
+                        Início
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/filme.html">Filmes</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/filme.html">
+                        Filmes
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/serie.html">Séries</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/serie.html">
+                        Séries
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/novela.html">Novelas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/musica.html">
+                        Músicas
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/musica.html">Músicas</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/jogos.html">
+                        Jogos
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/jogos.html">Jogos</a>
+
+                <li class="nav-item">
+                    <a class="nav-link rounded-5" href="../html/formulario.html">
+                        Formulário
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-5" href="../html/formulario.html">Formulário</a>
-                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <div class="al">
-        <div class="titulo">
-            <h2 id="jo">Jogos</h2>
-            <h2 id="dis">Disponíveis</h2>
-            <h2 id="pa">para</h2>
-            <h2 id="alu">comprar</h2>
-        </div>
 
-        <section class="catalogo">
+    <main>
 
-            <div class="card" id="mario">
+        <h1 class="titulo">Catálogo de Jogos</h1>
 
-                <img id="mari" src="../img/jogos/Mario_Series_Logo.svg.webp">
-                <p>Super Mario Bros. é um jogo de plataforma onde Mario enfrenta desafios para salvar a Princesa Peach.
-                </p>
+        <section class="catalogo" aria-label="Jogos disponíveis">
+
+            <article class="card" id="mario">
+
+                <img id="mari"
+                    src="../img/jogos/Mario_Series_Logo.svg.webp"
+                    alt="Logo do Super Mario">
+
+                <h3>
+                    Super Mario Bros. é um jogo de plataforma onde Mario
+                    enfrenta desafios para salvar a Princesa Peach.
+                </h3>
+
                 <p class="preco">R$ 15,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="pac-man">
-                <img id="pac" src="../img/jogos/Pac-Man .png">
-                <p>Pac-Man é um jogo clássico de arcade onde você come pontos e foge dos fantasmas.</p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="pac-man">
+
+                <img id="pac"
+                    src="../img/jogos/Pac-Man .png"
+                    alt="Logo do Pac-Man">
+
+                <h3>
+                    Pac-Man é um jogo clássico de arcade onde você
+                    come pontos e foge dos fantasmas.
+                </h3>
+
                 <p class="preco">R$ 9,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="sonic">
-                <img id="soni" src="../img/jogos/SonicLOgo.png">
-                <p>Sonic é um jogo de plataforma onde você corre, coleta anéis e enfrenta inimigos em alta velocidade.
-                </p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="sonic">
+
+                <img id="soni"
+                    src="../img/jogos/SonicLOgo.png"
+                    alt="Logo do Sonic">
+
+                <h3>
+                    Sonic é um jogo de plataforma onde você corre,
+                    coleta anéis e enfrenta inimigos em alta velocidade.
+                </h3>
+
                 <p class="preco">R$ 3,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="mario-kart">
-                <img id="maka" src="../img/jogos/mario-kart.png">
-                <p>Mario Kart é um jogo de corrida onde você compete em pistas usando itens para atrapalhar os
-                    adversários.</p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="mario-kart">
+
+                <img id="maka"
+                    src="../img/jogos/mario-kart.png"
+                    alt="Logo do Mario Kart">
+
+                <h3>
+                    Mario Kart é um jogo de corrida onde você compete
+                    em pistas usando itens para atrapalhar os adversários.
+                </h3>
+
                 <p class="preco">R$ 5,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="Donkey-kong">
-                <img id="Don" src="../img/jogos/kong.jpg">
-                <p>Donkey Kong é um jogo de plataforma onde você enfrenta obstáculos e inimigos para salvar a princesa.
-                </p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="donkey-kong">
+
+                <img id="don"
+                    src="../img/jogos/kong.jpg"
+                    alt="Imagem do Donkey Kong">
+
+                <h3>
+                    Donkey Kong é um jogo de plataforma onde você enfrenta
+                    obstáculos e inimigos para salvar a princesa.
+                </h3>
+
                 <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="Mortal-Kombat">
-                <img id="Mor" src="../img/jogos/mortalk.jpg">
-                <p>Mortal Kombat é um jogo de luta onde você enfrenta adversários usando golpes e habilidades especiais.
-                </p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="mortal-kombat">
+
+                <img id="mor"
+                    src="../img/jogos/mortalk.jpg"
+                    alt="Imagem do Mortal Kombat">
+
+                <h3>
+                    Mortal Kombat é um jogo de luta onde você enfrenta
+                    adversários usando golpes e habilidades especiais.
+                </h3>
+
                 <p class="preco">R$ 6,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="Street-Fighter">
-                <img id="Stree" src="../img/jogos/Street-Fighter-Logo.png">
-                <p>Street Fighter é um jogo de luta onde você enfrenta adversários usando golpes e técnicas especiais.
-                </p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="street-fighter">
+
+                <img id="stree"
+                    src="../img/jogos/Street-Fighter-Logo.png"
+                    alt="Logo do Street Fighter">
+
+                <h3>
+                    Street Fighter é um jogo de luta onde você enfrenta
+                    adversários usando golpes e técnicas especiais.
+                </h3>
+
                 <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="Tetris">
-                <img id="Tetr" src="../img/jogos/Tetris.png">
-                <p>Tetris é um jogo de quebra-cabeça onde você encaixa peças para formar linhas e ganhar pontos.</p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="tetris">
+
+                <img id="tetr"
+                    src="../img/jogos/Tetris.png"
+                    alt="Logo do Tetris">
+
+                <h3>
+                    Tetris é um jogo de quebra-cabeça onde você encaixa
+                    peças para formar linhas e ganhar pontos.
+                </h3>
+
                 <p class="preco">R$ 3,99</p>
-                <button>Comprar</button>
-            </div>
 
-            <div class="card" id="The-king-of-fighters-97">
-                <img id="The" src="../img/jogos/figthers.jpg">
-                <p>The King of Fighters '97 é um jogo de luta onde equipes de lutadores enfrentam adversários em
-                    combates intensos.</p>
+                <button type="button">Comprar</button>
+
+            </article>
+
+
+            <article class="card" id="the-king-of-fighters-97">
+
+                <img id="the"
+                    src="../img/jogos/figthers.jpg"
+                    alt="Imagem de The King of Fighters 97">
+
+                <h3>
+                    The King of Fighters '97 é um jogo de luta onde equipes
+                    de lutadores enfrentam adversários em combates intensos.
+                </h3>
+
                 <p class="preco">R$ 4,99</p>
-                <button>Comprar</button>
-            </div>
-    </div>
-    </section>
+
+                <button type="button">Comprar</button>
+
+            </article>
+
+        </section>
+
+    </main>
+
 
     <footer class="bg-dark py-4">
-        <p class="text-white text-center">© 2026 Rebobina</p>
+
+        <p class="text-white text-center">
+            © 2026 Rebobina
+        </p>
+
         <div class="d-flex justify-content-center gap-3 fs-4">
-            <a href="https://www.instagram.com/rebobina_locadora_retro/" target="_blank" class="text-white">
+
+            <a href="https://www.instagram.com/rebobina_locadora_retro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white"
+                aria-label="Instagram da Rebobina">
+
                 <i class="bi bi-instagram"></i>
+
             </a>
-            <a href="formulario.html" class="text-white">
+
+            <a href="formulario.html"
+                class="text-white"
+                aria-label="Formulário">
+
                 <i class="bi bi-file-earmark-text"></i>
+
             </a>
+
         </div>
+
     </footer>
 
+
     <script src="../js/menu.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
     <script src="../js/alugar.js"></script>
+
 </body>
 
 </html>

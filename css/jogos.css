@@ -1,6 +1,5 @@
 body {
     background-color: #000000; /* Fundo de Tela */
-    border: solid 30px;
    
    
 }
@@ -52,11 +51,10 @@ nav button{
 /* TÍTULO */
 
 .titulo{
-   justify-content: center;
+    justify-content: center;
     margin: 40px 0;
-    font-size: 42px;
-     display: flex;
-    gap: 15px;
+    font-size: 50px;
+    display: flex;
     color: white;
     
 }
