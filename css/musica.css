@@ -63,14 +63,89 @@ nav button{
 #Opis button:hover{
     background: rgb(107, 31, 53);
 }
+#Gal button{
+    background: rgb(197, 83, 38);
+    
+}
+#Gal button:hover{
+    background: rgb(110, 46, 20);
+}
+#Michael button{
+    background: rgb(21, 65, 61);
+}
+#Michael button:hover{
+     background: rgb(12, 37, 34);
+}
+#Gil button{
+    background: rgb(33, 97, 17);
+}
+#Gil button:hover{
+    background: rgb(20, 59, 10);
+}
+#cla-60br button{
+    background: rgb(160, 29, 29);
+}
+#cla-60br button:hover{
+    background: rgb(105, 31, 31);
+}
+#cla-60int button{
+    background: rgb(133, 44, 44);
+}
+#cla-60int button:hover{
+    background: rgb(49, 20, 20);
+}
+#cla-70br button{
+    background: rgb(77, 77, 77);
+}
+#cla-70br button:hover{
+    background: rgb(0, 0, 0);
+}
+#cla-70int button{
+    background: rgb(117, 33, 58);
+}
+#cla-70int button:hover{
+    background: rgb(87, 22, 42);
+}
+#cla-80int button{
+    background: rgb(29, 75, 160);
+}
+#cla-80int button:hover{
+    background: rgb(31, 31, 105);
+}
+#cla-80br button{
+    background: rgb(139, 104, 26);
+}
+#cla-80br button:hover{
+    background: rgb(61, 50, 14);
+}
+
 /* TÍTULO */
 
 .titulo{
     text-align: center;
     margin: 40px 0;
-    font-size: 50px;
+    font-size: 42px;
     color: #ffffff;
 
+}
+.titulo2{
+    text-align: center;
+    
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    margin-right: 50%;
+    margin-left: 25%;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo2 h2{
+   
+    display: flex;
+    margin-right: 50%;
+    margin-left: 25%;
+   
 }
 
 /* CATÁLOGO */
