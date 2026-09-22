@@ -83,6 +83,43 @@ nav button{
 #Gil button:hover{
     background: rgb(20, 59, 10);
 }
+#cla-60br button{
+    background: rgb(160, 29, 29);
+}
+#cla-60br button:hover{
+    background: rgb(105, 31, 31);
+}
+#cla-60int button{
+    background: rgb(133, 44, 44);
+}
+#cla-60int button:hover{
+    background: rgb(49, 20, 20);
+}
+#cla-70br button{
+    background: rgb(77, 77, 77);
+}
+#cla-70br button:hover{
+    background: rgb(0, 0, 0);
+}
+#cla-70int button{
+    background: rgb(117, 33, 58);
+}
+#cla-70int button:hover{
+    background: rgb(87, 22, 42);
+}
+#cla-80int button{
+    background: rgb(29, 75, 160);
+}
+#cla-80int button:hover{
+    background: rgb(31, 31, 105);
+}
+#cla-80br button{
+    background: rgb(139, 104, 26);
+}
+#cla-80br button:hover{
+    background: rgb(61, 50, 14);
+}
+
 /* TÍTULO */
 
 .titulo{
