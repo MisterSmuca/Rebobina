@@ -64,6 +64,25 @@ nav button{
 #Opis button:hover{
     background: rgb(107, 31, 53);
 }
+#Gal button{
+    background: rgb(197, 83, 38);
+    
+}
+#Gal button:hover{
+    background: rgb(110, 46, 20);
+}
+#Michael button{
+    background: rgb(21, 65, 61);
+}
+#Michael button:hover{
+     background: rgb(12, 37, 34);
+}
+#Gil button{
+    background: rgb(33, 97, 17);
+}
+#Gil button:hover{
+    background: rgb(20, 59, 10);
+}
 /* TÍTULO */
 
 .titulo{
@@ -72,6 +91,25 @@ nav button{
     font-size: 42px;
     color: #ffffff;
 
+}
+.titulo2{
+    text-align: center;
+    
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    margin-right: 50%;
+    margin-left: 25%;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo2 h2{
+   
+    display: flex;
+    margin-right: 50%;
+    margin-left: 25%;
+   
 }
 
 /* CATÁLOGO */
