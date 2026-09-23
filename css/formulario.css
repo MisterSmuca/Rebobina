@@ -62,6 +62,13 @@ h1 {
         3px 3px 0 #ffffff,
         0 0 10px #000000;
     margin-bottom: 15px;
+   
+    width: 180px;
+    height: 100%;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -73,6 +80,14 @@ p {
         3px 3px 0 #ffffff,
         0 0 10px #000000;
     margin-bottom: 15px;
+     
+    width: 180px;
+    height: 100%;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 /* ---------- CONTAINER DO FORMULÁRIO ---------- */
@@ -104,4 +119,13 @@ footer p {
 }
 .bg-dark {
     margin-top: 20px;
+}
+.ba{
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
