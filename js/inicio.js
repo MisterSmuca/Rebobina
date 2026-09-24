@@ -12,12 +12,6 @@ const categorias = [
         link: "../html/serie.html"
     },
     {
-        nome: "NOVELAS",
-        icone: "📼",
-        mensagem: "Hoje é dia de uma boa história brasileira!",
-        link: "../html/novela.html"
-    },
-    {
         nome: "JOGOS",
         icone: "🕹️",
         mensagem: "Hora de voltar aos clássicos dos videogames!",
