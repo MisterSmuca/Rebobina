@@ -1,268 +1,119 @@
 const CHAVE_USUARIO = "rebobinaUsuario";
 const CHAVE_ALUGUEIS = "rebobinaAlugueis";
 
-// Cria os modais
-document.body.insertAdjacentHTML("beforeend", `
+// ---------- Utilitários ----------
+const $ = (id) => document.getElementById(id);
+const ler = (chave) => JSON.parse(localStorage.getItem(chave));
+const salvar = (chave, valor) => localStorage.setItem(chave, JSON.stringify(valor));
+const modal = (id) => bootstrap.Modal.getOrCreateInstance($(id));
 
-    <!-- Modal de cadastro -->
-    <div class="modal fade" id="modalCadastro">
+// ---------- Modais ----------
+const campos = [
+    { name: "nome", type: "text", placeholder: "Nome" },
+    { name: "email", type: "email", placeholder: "E-mail" },
+    { name: "telefone", type: "tel", placeholder: "Telefone" },
+];
 
+const inputs = campos
+    .map((c) => `<input class="form-control mb-3" required
+        name="${c.name}" type="${c.type}" placeholder="${c.placeholder}">`)
+    .join("");
+
+const criarModal = (id, titulo, corpo, botao) => `
+    <div class="modal fade" id="${id}">
         <div class="modal-dialog">
-
-            <div class="modal-content">
-
-                <form id="formCadastro">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title">Cadastro</h5>
-
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal">
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <p id="itemCadastro"></p>
-
-                        <input
-                            type="text"
-                            id="nome"
-                            class="form-control mb-3"
-                            placeholder="Nome">
-
-                        <input
-                            type="email"
-                            id="email"
-                            class="form-control mb-3"
-                            placeholder="E-mail">
-
-                        <input
-                            type="tel"
-                            id="telefone"
-                            class="form-control"
-                            placeholder="Telefone">
-
-                    </div>
-
-                    <div class="modal-footer">
-
-                        <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal">
-                            Cancelar
-                        </button>
-
-                        <button
-                            type="submit"
-                            class="btn btn-dark">
-                            Cadastrar
-                        </button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Modal de confirmação -->
-    <div class="modal fade" id="modalAluguel">
-
-        <div class="modal-dialog">
-
-            <div class="modal-content">
+            <form class="modal-content">
 
                 <div class="modal-header">
-
-                    <h5 class="modal-title">
-                        Confirmar Compra
-                    </h5>
-
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                    </button>
-
+                    <h5 class="modal-title">${titulo}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <div class="modal-body">
-
-                    <p id="saudacao"></p>
-
-                    <strong id="itemAluguel"></strong>
-
-                </div>
+                <div class="modal-body">${corpo}</div>
 
                 <div class="modal-footer">
-
-                    <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Cancelar
                     </button>
-
-                    <button
-                        type="button"
-                        class="btn btn-dark"
-                        id="confirmarAluguel">
-                        Confirmar
-                    </button>
-
+                    <button type="submit" class="btn btn-dark">${botao}</button>
                 </div>
 
-            </div>
-
+            </form>
         </div>
+    </div>`;
 
-    </div>
+const modalSucesso = `
+    <div class="modal fade" id="modalSucesso">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content text-center p-4">
+                <div class="display-1">📼</div>
+                <h5 class="fw-bold mt-2">Compra realizada!</h5>
+                <p class="text-muted mb-4" id="itemSucesso"></p>
+                <button type="button" class="btn btn-dark rounded-pill px-4"
+                    data-bs-dismiss="modal">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>`;
 
-`);
+document.body.insertAdjacentHTML("beforeend",
+    criarModal("modalCadastro", "Cadastro",
+        `<p id="itemCadastro"></p>${inputs}`, "Cadastrar") +
+    criarModal("modalAluguel", "Confirmar Compra",
+        `<p id="saudacao"></p><strong id="itemAluguel"></strong>`, "Confirmar") +
+    modalSucesso
+);
 
-
-// Pega o usuário salvo
-function obterUsuario() {
-
-    return JSON.parse(
-        localStorage.getItem(CHAVE_USUARIO)
-    );
-
-}
-
-
-// Abre o cadastro
+// ---------- Fluxo de compra ----------
 function abrirCadastro(item) {
+    $("itemCadastro").textContent = `Para comprar "${item.titulo}", faça seu cadastro.`;
 
-    const modal = new bootstrap.Modal(
-        document.getElementById("modalCadastro")
-    );
+    $("modalCadastro").querySelector("form").onsubmit = (e) => {
+        e.preventDefault();
 
-    document.getElementById("itemCadastro").textContent =
-        `Para comprar "${item.titulo}", faça seu cadastro.`;
-
-    document.getElementById("formCadastro").onsubmit = function(evento) {
-
-        evento.preventDefault();
-
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-        const telefone = document.getElementById("telefone").value;
-
-        if (nome === "" || email === "" || telefone === "") {
-
-            alert("Preencha todos os campos.");
-
-            return;
-        }
-
-        const usuario = {
-            nome: nome,
-            email: email,
-            telefone: telefone
-        };
-
-        localStorage.setItem(
-            CHAVE_USUARIO,
-            JSON.stringify(usuario)
-        );
-
-        modal.hide();
-
+        salvar(CHAVE_USUARIO, Object.fromEntries(new FormData(e.target)));
+        modal("modalCadastro").hide();
         abrirConfirmacao(item);
-
     };
 
-    modal.show();
-
+    modal("modalCadastro").show();
 }
 
-
-// Abre a confirmação
 function abrirConfirmacao(item) {
+    $("saudacao").textContent = `Olá, ${ler(CHAVE_USUARIO).nome}!`;
+    $("itemAluguel").textContent = `${item.titulo} - ${item.preco}`;
 
-    const usuario = obterUsuario();
+    $("modalAluguel").querySelector("form").onsubmit = (e) => {
+        e.preventDefault();
 
-    const modal = new bootstrap.Modal(
-        document.getElementById("modalAluguel")
-    );
+        salvar(CHAVE_ALUGUEIS, [...(ler(CHAVE_ALUGUEIS) ?? []), item]);
 
-    document.getElementById("saudacao").textContent =
-        `Olá, ${usuario.nome}!`;
+        // Só mostra o sucesso depois que o modal de confirmação terminar de fechar
+        $("modalAluguel").addEventListener("hidden.bs.modal", () => {
+            $("itemSucesso").textContent = item.titulo;
+            modal("modalSucesso").show();
+        }, { once: true });
 
-    document.getElementById("itemAluguel").textContent =
-        `${item.titulo} - ${item.preco}`;
-
-    document.getElementById("confirmarAluguel").onclick = function() {
-
-        let alugueis =
-            JSON.parse(localStorage.getItem(CHAVE_ALUGUEIS)) || [];
-
-        alugueis.push(item);
-
-        localStorage.setItem(
-            CHAVE_ALUGUEIS,
-            JSON.stringify(alugueis)
-        );
-
-        modal.hide();
-
-        alert("Compra realizada com sucesso!");
-
+        modal("modalAluguel").hide();
     };
 
-    modal.show();
-
+    modal("modalAluguel").show();
 }
 
+const comprar = (item) =>
+    ler(CHAVE_USUARIO) ? abrirConfirmacao(item) : abrirCadastro(item);
 
-// Verifica se já existe cadastro
-function tentarComprar(item) {
-
-    if (obterUsuario()) {
-
-        abrirConfirmacao(item);
-
-    } else {
-
-        abrirCadastro(item);
-
-    }
-
-}
-
-
-// Botões Comprar
-document.addEventListener("DOMContentLoaded", function() {
-
-    const botoes = document.querySelectorAll(".card button");
-
-    botoes.forEach(function(botao) {
-
-        botao.onclick = function() {
-
+// ---------- Botões Comprar ----------
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".card button").forEach((botao) => {
+        botao.onclick = () => {
             const card = botao.closest(".card");
 
-            const item = {
-
+            comprar({
                 titulo: card.querySelector("h3").textContent,
-
-                preco: card.querySelector(".preco").textContent
-
-            };
-
-            tentarComprar(item);
-
+                preco: card.querySelector(".preco").textContent,
+            });
         };
-
     });
-
 });

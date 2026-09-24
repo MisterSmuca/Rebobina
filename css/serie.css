@@ -1,148 +1,162 @@
-html, body {
-    height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: url('../img/série/rolo\ de\ filme\ 2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* efeito parallax */
-}
-nav ul {
-    text-align: center; /* Centraliza o Menu  */
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0; /* Remove o espaçamento */
-}
-nav ul li {
-    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 4%; /* Espaço entre os botões */
-}
-button{
-    border-radius: 20px; /* Arredonda a Borda */
-    font-size: 18px; /* Aumenta o Tamanho do Botão */
-}
-button:hover{
-transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-    transition: 0.3s;
-}
-
-*{
+/* ---------- RESET ---------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-/* TÍTULO */
+html, body {
+    height: 100%;
+}
 
-.titulo{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../img/série/rolo de filme 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;     /* efeito parallax */
+}
+
+main {
+    flex: 1;                          /* empurra o rodapé para o fim da tela */
+}
+
+/* ---------- MENU ---------- */
+nav ul {
     text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 4%;
+}
+
+/* ---------- BOTÕES ---------- */
+button {
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+/* ---------- TÍTULO ---------- */
+.titulo {
     margin: 40px 0;
     font-size: 50px;
     color: white;
+    text-align: center;
 }
 
-/* CATÁLOGO */
-
-.catalogo{
+/* ---------- CATÁLOGO ---------- */
+.catalogo {
     display: grid;
     grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: 1fr;              /* todas as linhas com a mesma altura */
     gap: 35px;
     justify-content: center;
     padding-bottom: 50px;
 }
 
-/* CARD DAS NOVELAS */
-
-.card{
+/* ---------- CARD ---------- */
+.card {
+    display: flex;
+    flex-direction: column;           /* capa, nome, texto, preço e botão empilhados */
+    padding: 20px;
     background: #FFFDF7;
     border-radius: 20px;
-    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.card img{
+/* Capa: mesma altura em todos os cards */
+.card img {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-/* NOME DA NOVELA */
-
-.card h3{
+/* Nome do filme: reserva 2 linhas, então tudo abaixo fica alinhado */
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.4em;
     margin-top: 15px;
     color: #8A5A44;
     font-size: 24px;
+    line-height: 1.2;
 }
 
-/* DESCRIÇÃO */
-
-.card p{
+/* Texto (gênero ou descrição): ocupa o espaço que sobrar, empurrando preço e botão para a base */
+.card p:not(.preco) {
+    flex-grow: 1;
     margin-top: 10px;
     color: #666;
     line-height: 1.4;
 }
 
-/* PREÇO */
-
-.preco{
+/* Preço */
+.preco {
+    margin-top: 15px;
     color: #A86A3D;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 15px;
 }
 
-/* BOTÃO */
-
-.card button{
-    margin-top: 15px;
+/* Botão */
+.card button {
+    margin: 15px auto 0;
+    padding: 12px 25px;
     background: #DDA15E;
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 12px 25px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.card button:hover{
+.card button:hover {
     background: #BC6C25;
 }
 
-/* RESPONSIVO */
+/* ---------- RODAPÉ ---------- */
+footer {
+    margin-top: 15px;
+}
 
-@media (max-width: 1000px){
-    .catalogo{
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 1000px) {
+    .catalogo {
         grid-template-columns: repeat(2, 300px);
     }
 }
 
-@media (max-width: 700px){
-    .catalogo{
+@media (max-width: 700px) {
+    .catalogo {
         grid-template-columns: minmax(0, 1fr);
         padding: 20px;
     }
 
-    .card{
-        width: 100%;
-    }
-}
-@media (max-width: 700px){
-    .titulo{
-        font-size: 35px;
+    .titulo {
         margin: 25px 10px;
+        font-size: 35px;
     }
 }

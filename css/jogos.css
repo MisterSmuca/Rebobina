@@ -1,335 +1,206 @@
-body {
-    background-color: #000000; /* Fundo de Tela */
-   
-   
-}
-
-nav ul {
-    text-align: center; /* Centraliza o Menu  */
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0; /* Remove o espaçamento */
-    
-}
-nav ul li {
-    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 4%; /* Espaço entre os botões */
-    
-}
-button{
-    border-radius: 20px; /* Arredonda a Borda */
-    font-size: 18px; /* Aumenta o Tamanho do Botão */
-    
-}
-button:hover{
-transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-    transition: 0.3s;
-}
-.al{
-    background-color: black;
-   
-   background-image:url("../img/jogos/remade-the-ps2-boot-screen-in-5k-for-your-desktop-wallpaper-v0-vsprmxbhzaj81.webp") ;
-   
-   
-}
-
-nav button{
-    border-radius: 20px; /* Arredonda a Borda */
-    font-size: 18px; /* Aumenta o Tamanho do Botão */
-    width: 150%;
-   
-}
-
-*{
+/* ---------- RESET ---------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+body {
+    background-color: #000000;
+}
 
-/* TÍTULO */
+/* ---------- MENU ---------- */
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
 
-.titulo{
+nav ul li {
+    display: inline-block;
+    margin-right: 4%;
+}
+
+/* ---------- BOTÕES ---------- */
+button {
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+/* ---------- TÍTULO ---------- */
+.titulo {
+    display: flex;
     justify-content: center;
     margin: 40px 0;
     font-size: 50px;
-    display: flex;
     color: white;
-    
 }
-/*
-#jo{
-    color:rgb(15, 48, 234);
-}
-#dis{
-    color:brown;
-}
-#pa{
-    color:rgb(247, 255, 20);
-}
-#alu{
-    color:rgb(21, 213, 21)
-}
-/* CATÁLOGO */
 
-.catalogo{
+/* ---------- CATÁLOGO ---------- */
+.catalogo {
     display: grid;
     grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: 1fr;              /* todas as linhas com a mesma altura */
     gap: 35px;
     justify-content: center;
     padding-bottom: 50px;
 }
 
-/* CARD DAS NOVELAS */
-
-.card{
-    background: #ffffff;
-    border-radius: 20px;
+/* ---------- CARD ---------- */
+.card {
+    display: flex;
+    flex-direction: column;           /* imagem, nome, texto, preço e botão empilhados */
+    width: 100%;
     padding: 20px;
-    text-align: center;
-    
+    background: #ffffff;
     border: 5px solid #000000;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
     transition: 0.3s;
-
-    width: 100%;
-    height: 450px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.card img{
+/* Imagem: mesma altura em todos os cards */
+.card img {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: 130px;
+    object-fit: contain;
     border-radius: 12px;
-    
 }
 
-/* NOME DA NOVELA */
-
-.card h3{
+/* Nome do jogo */
+.card h3 {
     margin-top: 15px;
     color: #922b2b;
     font-size: 24px;
 }
 
-/* DESCRIÇÃO */
-
-.card p{
+/* Descrição: ocupa o espaço que sobrar, empurrando preço e botão para a base */
+.card .descricao {
+    flex-grow: 1;
     margin-top: 10px;
     color: #666;
     line-height: 1.4;
-    
 }
-#pac{
-    width: 220px;
-    height: 110px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+
+/* Preço */
+.preco {
+    margin-top: 15px;
+    color: #A86A3D;
+    font-size: 22px;
+    font-weight: bold;
 }
-#pac-man:hover{
-    background-image:url("../img/jogos/pachover1.gif");
+
+/* Botão */
+.card button {
+    display: block;
+    width: 50%;
+    margin: 15px auto 0;
+    padding: 12px 25px;
+    background: #854d4d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #3f0d0d;
+}
+
+/* ---------- GIFS NO HOVER ---------- */
+#pac-man:hover {
+    background-image: url("../img/jogos/pachover1.gif");
     background-position: 64% -280%;
 }
 
-#mari{
-    width: 220px;
-    height: 100px;
-
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-#mario:hover{
-    background-image:url("../img/jogos/dequpxt-1bebfb58-ca59-4696-8a69-42d40657bede.gif");
+#mario:hover {
+    background-image: url("../img/jogos/dequpxt-1bebfb58-ca59-4696-8a69-42d40657bede.gif");
     background-repeat: no-repeat;
-     background-position: 110% 95%;
-       
+    background-position: 110% 95%;
 }
 
-#soni{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-#sonic:hover{
-    background-image:url("../img/jogos/download.gif");
+#sonic:hover {
+    background-image: url("../img/jogos/download.gif");
     background-repeat: no-repeat;
     background-position: -950% 115%;
-     background-size: 300px 150px;
+    background-size: 300px 150px;
 }
-#mario-kart:hover{
-    background-image:url("../img/jogos/Kart.gif");
+
+#mario-kart:hover {
+    background-image: url("../img/jogos/Kart.gif");
     background-repeat: no-repeat;
     background-position: 95% 95%;
     background-size: 80px 50px;
 }
 
-#maka{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Mortal-Kombat{
-    background-image:url("");
-    background-repeat: no-repeat;
-    background-position: 95% 95%;
-    background-size: 80px 50px;
-}
-
-#Don{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Donkey-kong:hover{
-    background-image:url("../img/jogos/da8rd01-70ed376c-5a80-4b82-8393-81d8369165ff.gif");
+#donkey-kong:hover {
+    background-image: url("../img/jogos/da8rd01-70ed376c-5a80-4b82-8393-81d8369165ff.gif");
     background-repeat: no-repeat;
     background-position: 105% 95%;
     background-size: 100px 120px;
 }
 
-#Mor{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Mortal-Kombat:hover {
-    background-image: 
+#mortal-kombat:hover {
+    background-image:
         url("../img/jogos/kittana.gif"),
         url("../img/jogos/kitana-winpose.gif");
-
     background-repeat: no-repeat, no-repeat;
-
     background-position: 100% 95%, -5% 95%;
-
     background-size: 80px 90px, 105px 115px;
 }
 
-#Stree{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Street-Fighter:hover{
-     background-image: 
+#street-fighter:hover {
+    background-image:
         url("../img/jogos/riu.gif"),
         url("../img/jogos/chhun.gif");
-
     background-repeat: no-repeat, no-repeat;
-
     background-position: 98% 95%, 0% 95%;
-
     background-size: 80px 90px, 105px 115px;
 }
 
-#Tetr{
-    width: 220px;
-    height: 115px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Tetris:hover{
-    background-image:url("../img/jogos/tetris.gif");
+#tetris:hover {
+    background-image: url("../img/jogos/tetris.gif");
     background-repeat: no-repeat;
     background-position: 95% 100%;
     background-size: 100% 100px;
 }
 
-#The{
-    width: 220px;
-    height: 110px;
-    border-radius: 20px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#The-king-of-fighters-97:hover{
-    background-image:url("../img/jogos/fi.gif");
+#the-king-of-fighters-97:hover {
+    background-image: url("../img/jogos/fi.gif");
     background-repeat: no-repeat;
     background-position: 110% 95%;
     background-size: 130px 100px;
 }
 
-
-/* PREÇO */
-
-.preco{
-    color: #A86A3D;
-    font-size: 22px;
-    font-weight: bold;
+/* ---------- RODAPÉ ---------- */
+footer {
     margin-top: 15px;
-    background-color: none;
 }
 
-/* BOTÃO */
-
-.card button{
-    margin-top: 15px;
-    background: #854d4d;
-    color: white;
-
-    border: none;
-    border-radius: 10px;
-
-    padding: 12px 25px;
-
-    cursor: pointer;
-    font-weight: bold;
-
-    transition: 0.3s;
-    width: 50%;
-    height: 13%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-
-.card button:hover{
-    background: #3f0d0d;
-}
-
-/* RESPONSIVO */
-
-@media (max-width: 1000px){
-    .catalogo{
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 1000px) {
+    .catalogo {
         grid-template-columns: repeat(2, 300px);
     }
 }
 
-@media (max-width: 700px){
-    .catalogo{
+@media (max-width: 700px) {
+    .catalogo {
         grid-template-columns: repeat(1, 300px);
     }
 }

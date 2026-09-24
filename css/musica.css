@@ -1,253 +1,172 @@
-body {
-    background-color: rgb(56, 54, 54); /* Fundo de Tela */
-    background-image:url("../img/musica/f.jpg") ;
-    
-    background-size: 110px 110px;
-    
-    background-position: 64% -89%;
-
-}
-nav ul {
-    text-align: center; /* Centraliza o Menu  */
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0; /* Remove o espaçamento */
-}
-nav ul li {
-    display: inline-block; /* Faz os itens da lista ficarem lado a lado */
-    margin-right: 4%; /* Espaço entre os botões */
-    
-}
-button{
-    border-radius: 20px; /* Arredonda a Borda */
-    font-size: 18px; /* Aumenta o Tamanho do Botão */
-    
-}
-button:hover{
-transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-    transition: 0.3s;
-}
-.al{
-    background-color: black;
-   
-   background-image:url("../img/musica/f.jpg") ;
-    background-position: center;
-    
-  background-attachment: fixed; /* efeito parallax */
-   
-}
-*{
+/* ---------- RESET ---------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', sans-serif;
 }
-nav button{
-    border-radius: 20px; /* Arredonda a Borda */
-    font-size: 18px; /* Aumenta o Tamanho do Botão */
-    width: 150%;
-   
+
+body {
+    background-color: rgb(56, 54, 54);
+    background-image: url("../img/musica/f.jpg");
+    background-size: 110px 110px;
+    background-position: 64% -89%;
 }
 
-#Rocket-man button{
-    
-    background: #746a41;
-    
-}
-#Rocket-man button:hover{
-    background: #4e4514;
-}
-#Opis button{
-    background:rgb(189, 58, 97)1;
-}
-#Opis button:hover{
-    background: rgb(107, 31, 53);
-}
-#Gal button{
-    background: rgb(197, 83, 38);
-    
-}
-#Gal button:hover{
-    background: rgb(110, 46, 20);
-}
-#Michael button{
-    background: rgb(21, 65, 61);
-}
-#Michael button:hover{
-     background: rgb(12, 37, 34);
-}
-#Gil button{
-    background: rgb(33, 97, 17);
-}
-#Gil button:hover{
-    background: rgb(20, 59, 10);
-}
-#cla-60br button{
-    background: rgb(160, 29, 29);
-}
-#cla-60br button:hover{
-    background: rgb(105, 31, 31);
-}
-#cla-60int button{
-    background: rgb(133, 44, 44);
-}
-#cla-60int button:hover{
-    background: rgb(49, 20, 20);
-}
-#cla-70br button{
-    background: rgb(77, 77, 77);
-}
-#cla-70br button:hover{
-    background: rgb(0, 0, 0);
-}
-#cla-70int button{
-    background: rgb(117, 33, 58);
-}
-#cla-70int button:hover{
-    background: rgb(87, 22, 42);
-}
-#cla-80int button{
-    background: rgb(29, 75, 160);
-}
-#cla-80int button:hover{
-    background: rgb(31, 31, 105);
-}
-#cla-80br button{
-    background: rgb(139, 104, 26);
-}
-#cla-80br button:hover{
-    background: rgb(61, 50, 14);
+/* Fundo da área de conteúdo */
+.al {
+    background-color: black;
+    background-image: url("../img/musica/f.jpg");
+    background-position: center;
+    background-attachment: fixed;     /* efeito parallax */
 }
 
-/* TÍTULO */
-
-.titulo{
+/* ---------- MENU ---------- */
+nav ul {
     text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 4%;
+}
+
+/* ---------- BOTÕES ---------- */
+button {
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+/* ---------- TÍTULOS ---------- */
+.titulo {
     margin: 40px 0;
     font-size: 42px;
     color: #ffffff;
-
-}
-.titulo2{
     text-align: center;
-    
+}
+
+.subtitulo {
+    margin: 10px 0 40px;
     font-size: 32px;
     color: #ffffff;
-    display: flex;
-    margin-right: 50%;
-    margin-left: 25%;
-    
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.titulo2 h2{
-   
-    display: flex;
-    margin-right: 50%;
-    margin-left: 25%;
-   
+    text-align: center;
 }
 
-/* CATÁLOGO */
-
-.catalogo{
+/* ---------- CATÁLOGO ---------- */
+.catalogo {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 330px);
+    grid-auto-rows: 1fr;              /* todas as linhas com a mesma altura */
     gap: 35px;
     justify-content: center;
     padding-bottom: 50px;
 }
 
-/* CARD DAS NOVELAS */
-
-.card{
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    
-    border: 5px solid #000000;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-
-    transition: 0.3s;
-
-    width: 110%;
-    height: 560px;
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-}
-
-.card img{
+/* ---------- CARD ---------- */
+.card {
+    display: flex;
+    flex-direction: column;           /* player, nome, texto, preço e botão empilhados */
     width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-    
+    padding: 20px;
+    background: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
 
-/* NOME DA NOVELA */
+/* Player do Spotify: mesma altura em todos os cards */
+.card iframe {
+    width: 100%;
+    height: 352px;
+    border: 0;
+    border-radius: 12px;
+}
 
-.card h3{
+/* Nome do álbum: reserva 2 linhas, então os textos começam alinhados */
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.4em;
     margin-top: 15px;
     color: #686666;
     font-size: 24px;
+    line-height: 1.2;
 }
 
-/* DESCRIÇÃO */
-
-.card p{
+/* Descrição: ocupa o espaço que sobrar, empurrando preço e botão para a base */
+.card .descricao {
+    flex-grow: 1;
     margin-top: 10px;
     color: #666;
     line-height: 1.4;
-    
 }
 
-/* PREÇO */
-
-.preco{
+/* Preço */
+.preco {
+    margin-top: 15px;
     color: #A86A3D;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 15px;
-    background-color: none;
 }
 
-/* BOTÃO */
-
-.card button{
-    margin-top: 15px;
-    background: #686666;
+/* Botão: a cor vem das variáveis de cada card */
+.card button {
+    margin: 15px auto 0;
+    padding: 12px 25px;
+    background: var(--cor, #686666);
     color: white;
-
     border: none;
     border-radius: 10px;
-
-    padding: 12px 25px;
-
-    cursor: pointer;
     font-weight: bold;
-
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.card button:hover{
-    background: #242323;
+.card button:hover {
+    background: var(--cor-hover, #242323);
 }
-/* RESPONSIVO */
 
-@media (max-width: 1000px){
-    .catalogo{
-        grid-template-columns: repeat(2, 300px);
+/* ---------- COR DO BOTÃO DE CADA CARD ---------- */
+#Gil       { --cor: rgb(33, 97, 17);   --cor-hover: rgb(20, 59, 10); }
+#Michael   { --cor: rgb(21, 65, 61);   --cor-hover: rgb(12, 37, 34); }
+#Gal       { --cor: rgb(197, 83, 38);  --cor-hover: rgb(110, 46, 20); }
+#cla-60br  { --cor: rgb(160, 29, 29);  --cor-hover: rgb(105, 31, 31); }
+#cla-60int { --cor: rgb(133, 44, 44);  --cor-hover: rgb(49, 20, 20); }
+#cla-70br  { --cor: rgb(77, 77, 77);   --cor-hover: rgb(0, 0, 0); }
+#cla-70int { --cor: rgb(117, 33, 58);  --cor-hover: rgb(87, 22, 42); }
+#cla-80br  { --cor: rgb(139, 104, 26); --cor-hover: rgb(61, 50, 14); }
+#cla-80int { --cor: rgb(29, 75, 160);  --cor-hover: rgb(31, 31, 105); }
+
+/* ---------- RODAPÉ ---------- */
+footer {
+    margin-top: 15px;
+}
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 1100px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 330px);
     }
 }
 
-@media (max-width: 700px){
-    .catalogo{
-        grid-template-columns: repeat(1, 300px);
+@media (max-width: 780px) {
+    .catalogo {
+        grid-template-columns: repeat(1, 330px);
     }
 }
