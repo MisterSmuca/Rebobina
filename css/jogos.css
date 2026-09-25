@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #000000;
+    background-image: URL("../img/jogos/remade-the-ps2-boot-screen-in-5k-for-your-desktop-wallpaper-v0-vsprmxbhzaj81.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* ---------- MENU ---------- */
